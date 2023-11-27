@@ -63,7 +63,8 @@ def retrieve_service_catalogs():
                 "contacts": schema_data.get("contacts", []),
                 "languages": schema_data.get("languages", []),
                 "description": schema_data.get("description"),
-                "tags": schema_data.get("tags", [])
+                "tags": schema_data.get("tags", []),
+                "type": schema_data.get("type")
             },
             "relations": {}
             }

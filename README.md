@@ -37,6 +37,28 @@ Create the Monitor blueprint in Port using this schema:
         },
         "title": "Languages",
         "type": "array"
+      },
+      "type": {
+        "title": "Type",
+        "type": "string",
+        "enum": [
+          "web",
+          "db",
+          "custom",
+          "cache",
+          "function",
+          "browser",
+          "mobile"
+        ],
+        "enumColors": {
+          "web": "lightGray",
+          "db": "lightGray",
+          "custom": "lightGray",
+          "cache": "lightGray",
+          "function": "lightGray",
+          "browser": "lightGray",
+          "mobile": "lightGray"
+        }
       }
     },
     "required": []
