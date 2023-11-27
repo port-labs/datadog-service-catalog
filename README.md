@@ -76,3 +76,4 @@ The list of variables required to run this script are:
 
 Please note that by deafult, all Datadog API clients are configured to consume Datadog US site APIs (https://api.datadoghq.com). If you are on the Datadog EU site, set the environment variable `DATADOG_API_URL` to `https://api.datadoghq.eu`. Some Datadog clients may require you to add your account region to the API. In this case, you may change the DATADOG_API_URL to `https://api.<region>.datadoghq.com` or `https://api.<region>.datadoghq.eu`
 
+Follow the official documentation on how to [generate Datadog API and application keys](https://docs.datadoghq.com/api/latest/)
