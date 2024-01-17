@@ -56,6 +56,8 @@ def retrieve_service_catalogs():
 
     for service in services:
         schema_data = service["attributes"]["schema"]
+        links = schema_data.get("links", [])
+        repo_urls = [link["url"] for link in links if link["type"] == "repo"]
         entity = {
             "identifier": schema_data["dd-service"],
             "title": schema_data["dd-service"],
@@ -64,7 +66,8 @@ def retrieve_service_catalogs():
                 "languages": schema_data.get("languages", []),
                 "description": schema_data.get("description"),
                 "tags": schema_data.get("tags", []),
-                "type": schema_data.get("type")
+                "type": schema_data.get("type"),
+                "code_repositories": repo_urls
             },
             "relations": {}
             }
