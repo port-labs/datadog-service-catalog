@@ -59,12 +59,21 @@ Create the Monitor blueprint in Port using this schema:
           "browser": "lightGray",
           "mobile": "lightGray"
         }
+      },
+      "code_repositories": {
+        "title": "Code Repositories",
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "url"
+        }
       }
     },
     "required": []
   },
   "mirrorProperties": {},
   "calculationProperties": {},
+  "aggregationProperties": {},
   "relations": {}
 }
 ```
